@@ -46,15 +46,16 @@ public class Main {
     }
 
     public static int calculateHighScorePosition (int playerScore){
+        int pos = 4;
         if (playerScore >= 1000){
-            return 1;
+            pos = 1;
         } else if (playerScore >= 500) {
-            return 2;
+            pos = 2;
         } else if (playerScore >= 100) {
-            return 3;
+            pos =  3;
         }
 
-        return 4;
+        return pos;
     }
 
     public static int calculateScore ( boolean gameOver, int score, int levelCompleted, int bonus){
